@@ -1,31 +1,24 @@
 // Adding active state to the nav links
 
-/*document.querySelectorAll("[data-link], [data-page]").forEach( item =>{
+document.querySelectorAll("[data-link], [data-page]").forEach( item =>{
     item.addEventListener("click", e => {
 
         document.querySelector("[data-link].active").classList.toggle("active"); // remove the class "active" from last page visited
         item.classList.toggle("active"); // Adds the class "active"
 
-        document.querySelector("[data-page].show-page").classList.toggle("show-page"); // remove the class "active" from last page visited
-        item.classList.toggle("show-page"); // Adds the class "active"
-
     })
-})*/
-
+})
 
 
 const settingsPage = document.getElementById("settings");
 const plantsPage = document.getElementById("plants");
-const homePage = document.getElementById("home");
 
 
+function getContent(fragmentId, callback){ // Function that fetches the content that will be displayed on each page
 
+    let username = localStorage.getItem("firstName"); // Here we set the username as the first name from LocalStorage
 
-function getContent(fragmentId, callback){
-
-    let username = localStorage.getItem("firstName");
-
-    if(!username) {
+    if(!username) { // Default name if nothing is inside localStorage
         username = "Stranger";
     }
 
@@ -39,6 +32,7 @@ function getContent(fragmentId, callback){
 }
   
 function setupEventListeners() {
+
     const saveBtn = document.querySelector("#btnSave");
     const firstName = document.querySelector("#inPutFirstName");
     const lastName = document.querySelector("#inPutLastName");
@@ -72,7 +66,7 @@ function loadContent(){
 }
 
 if(!location.hash) {
-location.hash = "#home";
+location.hash = "#home"; // Here I use the Location API to set a default location (home)
 }
 
 loadContent();
