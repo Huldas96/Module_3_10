@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+    left: 3rem;
+    width: 10rem;
+}
+
+body nav {
+    height: 100vh;
+    width: 15%;
+    background-color:rgb(34, 83, 102);
+    display: inline-block;
+    padding-top: 10rem;
+}
+
+.page-link {
+    text-decoration: none;
+    color: rgb(88, 156, 184);
+    display: inline-block;
+    padding: 0.6rem 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.page-link:hover {
+    color: rgb(122, 197, 226);
+    cursor: pointer;
+}
+
+.active {
+    color: rgb(122, 197, 226);
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+
+.show-page {
+    display: inline-block;
+}
+
+#app {
+    width: 50rem;
+    height: 50rem;
+    background-color: rgb(196, 196, 196);
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-radius: 5%;
+    padding: 5rem 5rem;
+    
+}
+
+#settings {
+    background-color: black;
+}
+
+.plant-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 38rem;
+    height: 38rem;
+}
+
+.plant-card {
+    width: 12rem;
+    height: 19rem;
+    background-color: coral;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.plant-card img {
+    height: 12rem;
+}
+
+.plant-card p {
+    width: 8.5rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.plant-card h2 {
+    padding-left: 0.5rem;
+}
+
+input {
+    height: 2rem;
+    width: 40%;
+    padding-left: 1rem;
+}
+
+button {
+    height: 2rem;
+    width: 4rem;
+}
+
+fieldset {
+    margin-top: 1rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}

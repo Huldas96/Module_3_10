@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Planters</title>
+</head>
+<body>
+
+    <img class="logo" src="img/logo_planter.svg" alt="logo">
+
+    <nav>
+        <a href="#home" class="page-link active" data-link>Home</a>
+        <a href="#plants" class="page-link" data-link>Plants</a>
+        <a href="#settings" class="page-link" data-link>Settings</a>
+    </nav>
+
+    <div id="app">
+        <div id="home show-page" style="display: none;" data-page></div>
+        <div id="plants" style="display: none;" data-page>
+            <div class="plant-container">
+
+                <div class="plant-card">
+                    <div>
+                        <img src="img/lil_cactus.jfif" alt="cactus">
+                    </div>
+                    <h2>Cactus</h2>
+                    <p>Here is a small cactus that lives in San Fransisco.</p>
+                </div>
+
+                <div class="plant-card">
+                    <div>
+                        <img src="img/lil_cactus.jfif" alt="cactus">
+                    </div>
+                    <h2>Cactus</h2>
+                    <p>Here is a small cactus that lives in San Fransisco.</p>
+                </div>
+                
+                <div class="plant-card">
+                    <div>
+                        <img src="img/lil_cactus.jfif" alt="cactus">
+                    </div>
+                    <h2>Cactus</h2>
+                    <p>Here is a small cactus that lives in San Fransisco.</p>
+                </div>
+                
+                <div class="plant-card">
+                    <div>
+                        <img src="img/lil_cactus.jfif" alt="cactus">
+                    </div>
+                    <h2>Cactus</h2>
+                    <p>Here is a small cactus that lives in San Fransisco.</p>
+                </div>
+
+                <div class="plant-card">
+                    <div>
+                        <img src="img/lil_cactus.jfif" alt="cactus">
+                    </div>
+                    <h2>Cactus</h2>
+                    <p>Here is a small cactus that lives in San Fransisco.</p>
+                </div>
+                
+                <div class="plant-card">
+                    <div>
+                        <img src="img/lil_cactus.jfif" alt="cactus">
+                    </div>
+                    <h2>Cactus</h2>
+                    <p>Here is a small cactus that lives in San Fransisco.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="settings" style="display: none;" data-page>
+            <fieldset>
+                <legend>Basic Information</legend>
+                <input id="inPutFirstName" type="text" placeholder="First name">
+                <input id="inPutLastName" type="text" placeholder="Last name">
+                <button id="btnSave" type="button">Save</button>
+            </fieldset>
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
